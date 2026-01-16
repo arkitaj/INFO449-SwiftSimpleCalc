@@ -51,8 +51,8 @@ func calculate(_ args: [String]) -> Int {
            let left = Int(args[0]),
            let right = Int(args[2]) {
 
-            let op = args[1]
-            switch op {
+            let operate = args[1]
+            switch operate {
             case "/": return right == 0 ? 0 : left / right
             case "%": return right == 0 ? 0 : left % right
             case "+": return left + right
